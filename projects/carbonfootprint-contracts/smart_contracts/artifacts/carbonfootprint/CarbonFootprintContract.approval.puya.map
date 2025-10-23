@@ -1,0 +1,2084 @@
+{
+  "version": 3,
+  "sources": [
+    "../../carbonfootprint/contract.py"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAK0D;AAAf;AAAnC;AAE+C;AAAf;AAAhC;AALR;;AAAA;;;AAAA;;;;;;AAAA;;;AAAA;;;;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;;AAAA;AASK;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;;;;;;;;;;;;;AAIyB;;AAAtB;AAAoC;AAApC;AAJH;AAAA;AAMA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAGG;AAAA;AAAA;AAAA;AAA2B;AAA3B;AAAA;AAAA;;AAAA;AACO;AAJV;AAAA;AAAA;AAAA;AAAA;AAAA;AAMA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAIG;AAAA;AAAA;AAAA;AAA8B;AAAA;AAA9B;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAEsB;;AAAtB;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;AACO;AAPV;AAAA;AAAA;AAAA;AAAA;AAAA;AASA;;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAIgC;;AAAtB;AAAA;AAAA;AAAA;AAAqC;AAAA;AAArC;AAAA;;AAAA;AAAP;AAGsB;;AAAtB;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;AAEA;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AATH;AAAA;AAcsB;AAAA;AAAA;AAAA;AAAZ;AAHV;AAAA;AAAA;AAAA;AAAA;AAAA;AAQ4C;;AAAtB;AAAA;AAAA;AAAA;AAAZ;AAHV;AAAA;AAAA;AAAA;AAAA;AAAA;AAKA;;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAGsB;AAAA;AAAA;AAAA;AAAZ;AAHV;AAAA;AAAA;AAAA;AAAA;AAAA;AAQsB;AAAA;AAAA;AAAA;AAAZ;AAHV;AAAA;AAAA;AAAA;AAAA;AAAA;AAKA;AAGuB;;AAHvB;AAAA;AAAA;AAAA",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "algopy.arc4.ARC4Contract.approval_program",
+      "params": {},
+      "block": "main",
+      "stack_in": [],
+      "op": "intcblock 0 1 2 8"
+    },
+    "7": {
+      "op": "bytecblock \"device_emissions\" 0x151f7c75 \"total_emissions\" \"device_count\""
+    },
+    "60": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "62": {
+      "op": "bnz main_after_if_else@2",
+      "stack_out": []
+    },
+    "65": {
+      "op": "bytec_2 // \"total_emissions\"",
+      "defined_out": [
+        "\"total_emissions\""
+      ],
+      "stack_out": [
+        "\"total_emissions\""
+      ]
+    },
+    "66": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "\"total_emissions\"",
+        "0"
+      ],
+      "stack_out": [
+        "\"total_emissions\"",
+        "0"
+      ]
+    },
+    "67": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "68": {
+      "op": "bytec_3 // \"device_count\"",
+      "defined_out": [
+        "\"device_count\""
+      ],
+      "stack_out": [
+        "\"device_count\""
+      ]
+    },
+    "69": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"device_count\"",
+        "0"
+      ]
+    },
+    "70": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "71": {
+      "block": "main_after_if_else@2",
+      "stack_in": [],
+      "op": "txn NumAppArgs",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "73": {
+      "op": "bz main___algopy_default_create@19",
+      "stack_out": []
+    },
+    "76": {
+      "op": "pushbytes 0x30c6d58a // method \"opt_in()void\"",
+      "defined_out": [
+        "Method(opt_in()void)"
+      ],
+      "stack_out": [
+        "Method(opt_in()void)"
+      ]
+    },
+    "82": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(opt_in()void)",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "Method(opt_in()void)",
+        "tmp%2#0"
+      ]
+    },
+    "85": {
+      "op": "match main_opt_in_route@5",
+      "stack_out": []
+    },
+    "89": {
+      "block": "main_switch_case_next@6",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "91": {
+      "op": "!",
+      "defined_out": [
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%9#0"
+      ]
+    },
+    "92": {
+      "error": "OnCompletion must be NoOp",
+      "op": "assert // OnCompletion must be NoOp",
+      "stack_out": []
+    },
+    "93": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "tmp%10#0"
+      ]
+    },
+    "95": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "96": {
+      "op": "pushbytess 0x0a5efd5b 0x8abf8bc3 0x37c915b3 0x53c2b5f0 0x15cc5ae9 0x78a8661e 0x01237cf7 0xa9d25496 // method \"register_device(string)uint64\", method \"record_emission(string,uint64)uint64\", method \"transfer_emissions(address,uint64)void\", method \"get_total_emissions()uint64\", method \"get_device_emissions()uint64\", method \"get_emissions_for_account(address)uint64\", method \"get_device_count()uint64\", method \"get_sender_address()address\"",
+      "defined_out": [
+        "Method(get_device_count()uint64)",
+        "Method(get_device_emissions()uint64)",
+        "Method(get_emissions_for_account(address)uint64)",
+        "Method(get_sender_address()address)",
+        "Method(get_total_emissions()uint64)",
+        "Method(record_emission(string,uint64)uint64)",
+        "Method(register_device(string)uint64)",
+        "Method(transfer_emissions(address,uint64)void)"
+      ],
+      "stack_out": [
+        "Method(register_device(string)uint64)",
+        "Method(record_emission(string,uint64)uint64)",
+        "Method(transfer_emissions(address,uint64)void)",
+        "Method(get_total_emissions()uint64)",
+        "Method(get_device_emissions()uint64)",
+        "Method(get_emissions_for_account(address)uint64)",
+        "Method(get_device_count()uint64)",
+        "Method(get_sender_address()address)"
+      ]
+    },
+    "138": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(get_device_count()uint64)",
+        "Method(get_device_emissions()uint64)",
+        "Method(get_emissions_for_account(address)uint64)",
+        "Method(get_sender_address()address)",
+        "Method(get_total_emissions()uint64)",
+        "Method(record_emission(string,uint64)uint64)",
+        "Method(register_device(string)uint64)",
+        "Method(transfer_emissions(address,uint64)void)",
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "Method(register_device(string)uint64)",
+        "Method(record_emission(string,uint64)uint64)",
+        "Method(transfer_emissions(address,uint64)void)",
+        "Method(get_total_emissions()uint64)",
+        "Method(get_device_emissions()uint64)",
+        "Method(get_emissions_for_account(address)uint64)",
+        "Method(get_device_count()uint64)",
+        "Method(get_sender_address()address)",
+        "tmp%12#0"
+      ]
+    },
+    "141": {
+      "op": "match register_device record_emission transfer_emissions get_total_emissions get_device_emissions get_emissions_for_account get_device_count get_sender_address",
+      "stack_out": []
+    },
+    "159": {
+      "op": "err"
+    },
+    "160": {
+      "block": "main_opt_in_route@5",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "162": {
+      "op": "intc_1 // OptIn",
+      "defined_out": [
+        "OptIn",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "OptIn"
+      ]
+    },
+    "163": {
+      "op": "==",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "164": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%4#0",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%4#0",
+        "tmp%5#0"
+      ]
+    },
+    "166": {
+      "op": "&&",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "167": {
+      "error": "OnCompletion must be OptIn && can only call when not creating",
+      "op": "assert // OnCompletion must be OptIn && can only call when not creating",
+      "stack_out": []
+    },
+    "168": {
+      "op": "b opt_in"
+    },
+    "171": {
+      "block": "main___algopy_default_create@19",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%13#0"
+      ],
+      "stack_out": [
+        "tmp%13#0"
+      ]
+    },
+    "173": {
+      "op": "!",
+      "defined_out": [
+        "tmp%14#0"
+      ],
+      "stack_out": [
+        "tmp%14#0"
+      ]
+    },
+    "174": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%14#0",
+        "tmp%15#0"
+      ],
+      "stack_out": [
+        "tmp%14#0",
+        "tmp%15#0"
+      ]
+    },
+    "176": {
+      "op": "!",
+      "defined_out": [
+        "tmp%14#0",
+        "tmp%16#0"
+      ],
+      "stack_out": [
+        "tmp%14#0",
+        "tmp%16#0"
+      ]
+    },
+    "177": {
+      "op": "&&",
+      "defined_out": [
+        "tmp%17#0"
+      ],
+      "stack_out": [
+        "tmp%17#0"
+      ]
+    },
+    "178": {
+      "error": "OnCompletion must be NoOp && can only call when creating",
+      "op": "assert // OnCompletion must be NoOp && can only call when creating",
+      "stack_out": []
+    },
+    "179": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "180": {
+      "op": "return",
+      "stack_out": []
+    },
+    "181": {
+      "subroutine": "smart_contracts.carbonfootprint.contract.CarbonFootprintContract.opt_in[routing]",
+      "params": {},
+      "block": "opt_in",
+      "stack_in": [],
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "183": {
+      "op": "bytec_0 // \"device_emissions\"",
+      "defined_out": [
+        "\"device_emissions\"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\"device_emissions\""
+      ]
+    },
+    "184": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "\"device_emissions\"",
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\"device_emissions\"",
+        "0"
+      ]
+    },
+    "185": {
+      "op": "app_local_put",
+      "stack_out": []
+    },
+    "186": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "187": {
+      "op": "return",
+      "stack_out": []
+    },
+    "188": {
+      "subroutine": "smart_contracts.carbonfootprint.contract.CarbonFootprintContract.register_device[routing]",
+      "params": {},
+      "block": "register_device",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "device_id#0"
+      ],
+      "stack_out": [
+        "device_id#0"
+      ]
+    },
+    "191": {
+      "op": "dup",
+      "defined_out": [
+        "device_id#0",
+        "device_id#0 (copy)"
+      ],
+      "stack_out": [
+        "device_id#0",
+        "device_id#0 (copy)"
+      ]
+    },
+    "192": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "device_id#0",
+        "device_id#0 (copy)"
+      ],
+      "stack_out": [
+        "device_id#0",
+        "device_id#0 (copy)",
+        "0"
+      ]
+    },
+    "193": {
+      "error": "invalid array length header",
+      "op": "extract_uint16 // on error: invalid array length header",
+      "defined_out": [
+        "aggregate%array_length%0#0",
+        "device_id#0"
+      ],
+      "stack_out": [
+        "device_id#0",
+        "aggregate%array_length%0#0"
+      ]
+    },
+    "194": {
+      "op": "intc_2 // 2",
+      "defined_out": [
+        "2",
+        "aggregate%array_length%0#0",
+        "device_id#0"
+      ],
+      "stack_out": [
+        "device_id#0",
+        "aggregate%array_length%0#0",
+        "2"
+      ]
+    },
+    "195": {
+      "op": "+",
+      "defined_out": [
+        "add%0#0",
+        "device_id#0"
+      ],
+      "stack_out": [
+        "device_id#0",
+        "add%0#0"
+      ]
+    },
+    "196": {
+      "op": "swap",
+      "stack_out": [
+        "add%0#0",
+        "device_id#0"
+      ]
+    },
+    "197": {
+      "op": "len",
+      "defined_out": [
+        "add%0#0",
+        "len%0#0"
+      ],
+      "stack_out": [
+        "add%0#0",
+        "len%0#0"
+      ]
+    },
+    "198": {
+      "op": "==",
+      "defined_out": [
+        "eq%0#0"
+      ],
+      "stack_out": [
+        "eq%0#0"
+      ]
+    },
+    "199": {
+      "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "stack_out": []
+    },
+    "200": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "201": {
+      "op": "bytec_3 // \"device_count\"",
+      "defined_out": [
+        "\"device_count\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"device_count\""
+      ]
+    },
+    "202": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "203": {
+      "error": "check self.device_count exists",
+      "op": "assert // check self.device_count exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "204": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "1"
+      ]
+    },
+    "205": {
+      "op": "+",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "206": {
+      "op": "bytec_3 // \"device_count\"",
+      "stack_out": [
+        "tmp%0#1",
+        "\"device_count\""
+      ]
+    },
+    "207": {
+      "op": "dig 1",
+      "defined_out": [
+        "\"device_count\"",
+        "tmp%0#1",
+        "tmp%0#1 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "\"device_count\"",
+        "tmp%0#1 (copy)"
+      ]
+    },
+    "209": {
+      "op": "app_global_put",
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "210": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "211": {
+      "op": "bytec_1 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "212": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "213": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "214": {
+      "op": "log",
+      "stack_out": []
+    },
+    "215": {
+      "op": "intc_1 // 1",
+      "stack_out": [
+        "1"
+      ]
+    },
+    "216": {
+      "op": "return",
+      "stack_out": []
+    },
+    "217": {
+      "subroutine": "smart_contracts.carbonfootprint.contract.CarbonFootprintContract.record_emission[routing]",
+      "params": {},
+      "block": "record_emission",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "device_id#0"
+      ],
+      "stack_out": [
+        "device_id#0"
+      ]
+    },
+    "220": {
+      "op": "dup",
+      "defined_out": [
+        "device_id#0",
+        "device_id#0 (copy)"
+      ],
+      "stack_out": [
+        "device_id#0",
+        "device_id#0 (copy)"
+      ]
+    },
+    "221": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "device_id#0",
+        "device_id#0 (copy)"
+      ],
+      "stack_out": [
+        "device_id#0",
+        "device_id#0 (copy)",
+        "0"
+      ]
+    },
+    "222": {
+      "error": "invalid array length header",
+      "op": "extract_uint16 // on error: invalid array length header",
+      "defined_out": [
+        "aggregate%array_length%0#0",
+        "device_id#0"
+      ],
+      "stack_out": [
+        "device_id#0",
+        "aggregate%array_length%0#0"
+      ]
+    },
+    "223": {
+      "op": "intc_2 // 2",
+      "defined_out": [
+        "2",
+        "aggregate%array_length%0#0",
+        "device_id#0"
+      ],
+      "stack_out": [
+        "device_id#0",
+        "aggregate%array_length%0#0",
+        "2"
+      ]
+    },
+    "224": {
+      "op": "+",
+      "defined_out": [
+        "add%0#0",
+        "device_id#0"
+      ],
+      "stack_out": [
+        "device_id#0",
+        "add%0#0"
+      ]
+    },
+    "225": {
+      "op": "swap",
+      "stack_out": [
+        "add%0#0",
+        "device_id#0"
+      ]
+    },
+    "226": {
+      "op": "len",
+      "defined_out": [
+        "add%0#0",
+        "len%0#0"
+      ],
+      "stack_out": [
+        "add%0#0",
+        "len%0#0"
+      ]
+    },
+    "227": {
+      "op": "==",
+      "defined_out": [
+        "eq%0#0"
+      ],
+      "stack_out": [
+        "eq%0#0"
+      ]
+    },
+    "228": {
+      "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "stack_out": []
+    },
+    "229": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "emission_amount#0"
+      ],
+      "stack_out": [
+        "emission_amount#0"
+      ]
+    },
+    "232": {
+      "op": "dup",
+      "defined_out": [
+        "emission_amount#0",
+        "emission_amount#0 (copy)"
+      ],
+      "stack_out": [
+        "emission_amount#0",
+        "emission_amount#0 (copy)"
+      ]
+    },
+    "233": {
+      "op": "len",
+      "defined_out": [
+        "emission_amount#0",
+        "len%1#0"
+      ],
+      "stack_out": [
+        "emission_amount#0",
+        "len%1#0"
+      ]
+    },
+    "234": {
+      "op": "intc_3 // 8",
+      "defined_out": [
+        "8",
+        "emission_amount#0",
+        "len%1#0"
+      ],
+      "stack_out": [
+        "emission_amount#0",
+        "len%1#0",
+        "8"
+      ]
+    },
+    "235": {
+      "op": "==",
+      "defined_out": [
+        "emission_amount#0",
+        "eq%1#0"
+      ],
+      "stack_out": [
+        "emission_amount#0",
+        "eq%1#0"
+      ]
+    },
+    "236": {
+      "error": "invalid number of bytes for arc4.uint64",
+      "op": "assert // invalid number of bytes for arc4.uint64",
+      "stack_out": [
+        "emission_amount#0"
+      ]
+    },
+    "237": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "emission_amount#0",
+        "0"
+      ]
+    },
+    "238": {
+      "op": "bytec_2 // \"total_emissions\"",
+      "defined_out": [
+        "\"total_emissions\"",
+        "0",
+        "emission_amount#0"
+      ],
+      "stack_out": [
+        "emission_amount#0",
+        "0",
+        "\"total_emissions\""
+      ]
+    },
+    "239": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "emission_amount#0",
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "emission_amount#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "240": {
+      "error": "check self.total_emissions exists",
+      "op": "assert // check self.total_emissions exists",
+      "stack_out": [
+        "emission_amount#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "241": {
+      "op": "swap",
+      "stack_out": [
+        "maybe_value%0#0",
+        "emission_amount#0"
+      ]
+    },
+    "242": {
+      "op": "btoi",
+      "defined_out": [
+        "maybe_value%0#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "tmp%0#1"
+      ]
+    },
+    "243": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%0#1",
+        "maybe_value%0#0"
+      ]
+    },
+    "244": {
+      "op": "dig 1",
+      "defined_out": [
+        "maybe_value%0#0",
+        "tmp%0#1",
+        "tmp%0#1 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "maybe_value%0#0",
+        "tmp%0#1 (copy)"
+      ]
+    },
+    "246": {
+      "op": "+",
+      "defined_out": [
+        "tmp%0#1",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%1#1"
+      ]
+    },
+    "247": {
+      "op": "bytec_2 // \"total_emissions\"",
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%1#1",
+        "\"total_emissions\""
+      ]
+    },
+    "248": {
+      "op": "dig 1",
+      "defined_out": [
+        "\"total_emissions\"",
+        "tmp%0#1",
+        "tmp%1#1",
+        "tmp%1#1 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%1#1",
+        "\"total_emissions\"",
+        "tmp%1#1 (copy)"
+      ]
+    },
+    "250": {
+      "op": "app_global_put",
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%1#1"
+      ]
+    },
+    "251": {
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%0#1",
+        "tmp%1#1",
+        "tmp%2#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%1#1",
+        "tmp%2#1"
+      ]
+    },
+    "253": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%0#1",
+        "tmp%1#1",
+        "tmp%2#1",
+        "tmp%2#1 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%1#1",
+        "tmp%2#1",
+        "tmp%2#1 (copy)"
+      ]
+    },
+    "254": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%1#1",
+        "tmp%2#1",
+        "tmp%2#1 (copy)",
+        "0"
+      ]
+    },
+    "255": {
+      "op": "bytec_0 // \"device_emissions\"",
+      "defined_out": [
+        "\"device_emissions\"",
+        "0",
+        "tmp%0#1",
+        "tmp%1#1",
+        "tmp%2#1",
+        "tmp%2#1 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%1#1",
+        "tmp%2#1",
+        "tmp%2#1 (copy)",
+        "0",
+        "\"device_emissions\""
+      ]
+    },
+    "256": {
+      "op": "app_local_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "tmp%0#1",
+        "tmp%1#1",
+        "tmp%2#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%1#1",
+        "tmp%2#1",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "257": {
+      "error": "check self.device_emissions exists for account",
+      "op": "assert // check self.device_emissions exists for account",
+      "stack_out": [
+        "tmp%0#1",
+        "tmp%1#1",
+        "tmp%2#1",
+        "maybe_value%1#0"
+      ]
+    },
+    "258": {
+      "op": "uncover 3",
+      "stack_out": [
+        "tmp%1#1",
+        "tmp%2#1",
+        "maybe_value%1#0",
+        "tmp%0#1"
+      ]
+    },
+    "260": {
+      "op": "+",
+      "defined_out": [
+        "tmp%1#1",
+        "tmp%2#1",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%1#1",
+        "tmp%2#1",
+        "tmp%4#0"
+      ]
+    },
+    "261": {
+      "op": "bytec_0 // \"device_emissions\""
+    },
+    "262": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%1#1",
+        "tmp%2#1",
+        "\"device_emissions\"",
+        "tmp%4#0"
+      ]
+    },
+    "263": {
+      "op": "app_local_put",
+      "stack_out": [
+        "tmp%1#1"
+      ]
+    },
+    "264": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "265": {
+      "op": "bytec_1 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "266": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "267": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "268": {
+      "op": "log",
+      "stack_out": []
+    },
+    "269": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "270": {
+      "op": "return",
+      "stack_out": []
+    },
+    "271": {
+      "subroutine": "smart_contracts.carbonfootprint.contract.CarbonFootprintContract.transfer_emissions[routing]",
+      "params": {},
+      "block": "transfer_emissions",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "receiver#0"
+      ],
+      "stack_out": [
+        "receiver#0"
+      ]
+    },
+    "274": {
+      "op": "dup",
+      "defined_out": [
+        "receiver#0",
+        "receiver#0 (copy)"
+      ],
+      "stack_out": [
+        "receiver#0",
+        "receiver#0 (copy)"
+      ]
+    },
+    "275": {
+      "op": "len",
+      "defined_out": [
+        "len%0#0",
+        "receiver#0"
+      ],
+      "stack_out": [
+        "receiver#0",
+        "len%0#0"
+      ]
+    },
+    "276": {
+      "op": "pushint 32 // 32",
+      "defined_out": [
+        "32",
+        "len%0#0",
+        "receiver#0"
+      ],
+      "stack_out": [
+        "receiver#0",
+        "len%0#0",
+        "32"
+      ]
+    },
+    "278": {
+      "op": "==",
+      "defined_out": [
+        "eq%0#0",
+        "receiver#0"
+      ],
+      "stack_out": [
+        "receiver#0",
+        "eq%0#0"
+      ]
+    },
+    "279": {
+      "error": "invalid number of bytes for arc4.static_array<arc4.uint8, 32>",
+      "op": "assert // invalid number of bytes for arc4.static_array<arc4.uint8, 32>",
+      "stack_out": [
+        "receiver#0"
+      ]
+    },
+    "280": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "emission_amount#0",
+        "receiver#0"
+      ],
+      "stack_out": [
+        "receiver#0",
+        "emission_amount#0"
+      ]
+    },
+    "283": {
+      "op": "dup",
+      "defined_out": [
+        "emission_amount#0",
+        "emission_amount#0 (copy)",
+        "receiver#0"
+      ],
+      "stack_out": [
+        "receiver#0",
+        "emission_amount#0",
+        "emission_amount#0 (copy)"
+      ]
+    },
+    "284": {
+      "op": "len",
+      "defined_out": [
+        "emission_amount#0",
+        "len%1#0",
+        "receiver#0"
+      ],
+      "stack_out": [
+        "receiver#0",
+        "emission_amount#0",
+        "len%1#0"
+      ]
+    },
+    "285": {
+      "op": "intc_3 // 8",
+      "defined_out": [
+        "8",
+        "emission_amount#0",
+        "len%1#0",
+        "receiver#0"
+      ],
+      "stack_out": [
+        "receiver#0",
+        "emission_amount#0",
+        "len%1#0",
+        "8"
+      ]
+    },
+    "286": {
+      "op": "==",
+      "defined_out": [
+        "emission_amount#0",
+        "eq%1#0",
+        "receiver#0"
+      ],
+      "stack_out": [
+        "receiver#0",
+        "emission_amount#0",
+        "eq%1#0"
+      ]
+    },
+    "287": {
+      "error": "invalid number of bytes for arc4.uint64",
+      "op": "assert // invalid number of bytes for arc4.uint64",
+      "stack_out": [
+        "receiver#0",
+        "emission_amount#0"
+      ]
+    },
+    "288": {
+      "op": "txn Sender",
+      "defined_out": [
+        "emission_amount#0",
+        "receiver#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "receiver#0",
+        "emission_amount#0",
+        "tmp%0#1"
+      ]
+    },
+    "290": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "emission_amount#0",
+        "receiver#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "receiver#0",
+        "emission_amount#0",
+        "tmp%0#1",
+        "0"
+      ]
+    },
+    "291": {
+      "op": "bytec_0 // \"device_emissions\"",
+      "defined_out": [
+        "\"device_emissions\"",
+        "0",
+        "emission_amount#0",
+        "receiver#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "receiver#0",
+        "emission_amount#0",
+        "tmp%0#1",
+        "0",
+        "\"device_emissions\""
+      ]
+    },
+    "292": {
+      "op": "app_local_get_ex",
+      "defined_out": [
+        "emission_amount#0",
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "receiver#0"
+      ],
+      "stack_out": [
+        "receiver#0",
+        "emission_amount#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "293": {
+      "error": "check self.device_emissions exists for account",
+      "op": "assert // check self.device_emissions exists for account",
+      "stack_out": [
+        "receiver#0",
+        "emission_amount#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "294": {
+      "op": "swap",
+      "stack_out": [
+        "receiver#0",
+        "maybe_value%0#0",
+        "emission_amount#0"
+      ]
+    },
+    "295": {
+      "op": "btoi",
+      "defined_out": [
+        "maybe_value%0#0",
+        "receiver#0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "receiver#0",
+        "maybe_value%0#0",
+        "tmp%1#1"
+      ]
+    },
+    "296": {
+      "op": "swap",
+      "stack_out": [
+        "receiver#0",
+        "tmp%1#1",
+        "maybe_value%0#0"
+      ]
+    },
+    "297": {
+      "op": "dig 1",
+      "defined_out": [
+        "maybe_value%0#0",
+        "receiver#0",
+        "tmp%1#1",
+        "tmp%1#1 (copy)"
+      ],
+      "stack_out": [
+        "receiver#0",
+        "tmp%1#1",
+        "maybe_value%0#0",
+        "tmp%1#1 (copy)"
+      ]
+    },
+    "299": {
+      "op": ">=",
+      "defined_out": [
+        "receiver#0",
+        "tmp%1#1",
+        "tmp%2#1"
+      ],
+      "stack_out": [
+        "receiver#0",
+        "tmp%1#1",
+        "tmp%2#1"
+      ]
+    },
+    "300": {
+      "error": "Insufficient emissions to transfer",
+      "op": "assert // Insufficient emissions to transfer",
+      "stack_out": [
+        "receiver#0",
+        "tmp%1#1"
+      ]
+    },
+    "301": {
+      "op": "txn Sender",
+      "defined_out": [
+        "receiver#0",
+        "tmp%1#1",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "receiver#0",
+        "tmp%1#1",
+        "tmp%3#0"
+      ]
+    },
+    "303": {
+      "op": "dup",
+      "defined_out": [
+        "receiver#0",
+        "tmp%1#1",
+        "tmp%3#0",
+        "tmp%3#0 (copy)"
+      ],
+      "stack_out": [
+        "receiver#0",
+        "tmp%1#1",
+        "tmp%3#0",
+        "tmp%3#0 (copy)"
+      ]
+    },
+    "304": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "receiver#0",
+        "tmp%1#1",
+        "tmp%3#0",
+        "tmp%3#0 (copy)",
+        "0"
+      ]
+    },
+    "305": {
+      "op": "bytec_0 // \"device_emissions\"",
+      "stack_out": [
+        "receiver#0",
+        "tmp%1#1",
+        "tmp%3#0",
+        "tmp%3#0 (copy)",
+        "0",
+        "\"device_emissions\""
+      ]
+    },
+    "306": {
+      "op": "app_local_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "receiver#0",
+        "tmp%1#1",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "receiver#0",
+        "tmp%1#1",
+        "tmp%3#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "307": {
+      "error": "check self.device_emissions exists for account",
+      "op": "assert // check self.device_emissions exists for account",
+      "stack_out": [
+        "receiver#0",
+        "tmp%1#1",
+        "tmp%3#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "308": {
+      "op": "dig 2",
+      "stack_out": [
+        "receiver#0",
+        "tmp%1#1",
+        "tmp%3#0",
+        "maybe_value%1#0",
+        "tmp%1#1 (copy)"
+      ]
+    },
+    "310": {
+      "op": "-",
+      "defined_out": [
+        "receiver#0",
+        "tmp%1#1",
+        "tmp%3#0",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "receiver#0",
+        "tmp%1#1",
+        "tmp%3#0",
+        "tmp%5#0"
+      ]
+    },
+    "311": {
+      "op": "bytec_0 // \"device_emissions\""
+    },
+    "312": {
+      "op": "swap",
+      "stack_out": [
+        "receiver#0",
+        "tmp%1#1",
+        "tmp%3#0",
+        "\"device_emissions\"",
+        "tmp%5#0"
+      ]
+    },
+    "313": {
+      "op": "app_local_put",
+      "stack_out": [
+        "receiver#0",
+        "tmp%1#1"
+      ]
+    },
+    "314": {
+      "op": "dig 1",
+      "stack_out": [
+        "receiver#0",
+        "tmp%1#1",
+        "receiver#0 (copy)"
+      ]
+    },
+    "316": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "receiver#0",
+        "tmp%1#1",
+        "receiver#0 (copy)",
+        "0"
+      ]
+    },
+    "317": {
+      "op": "bytec_0 // \"device_emissions\"",
+      "stack_out": [
+        "receiver#0",
+        "tmp%1#1",
+        "receiver#0 (copy)",
+        "0",
+        "\"device_emissions\""
+      ]
+    },
+    "318": {
+      "op": "app_local_get_ex",
+      "defined_out": [
+        "maybe_exists%2#0",
+        "maybe_value%2#0",
+        "receiver#0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "receiver#0",
+        "tmp%1#1",
+        "maybe_value%2#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "319": {
+      "error": "check self.device_emissions exists for account",
+      "op": "assert // check self.device_emissions exists for account",
+      "stack_out": [
+        "receiver#0",
+        "tmp%1#1",
+        "maybe_value%2#0"
+      ]
+    },
+    "320": {
+      "op": "+",
+      "defined_out": [
+        "receiver#0",
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "receiver#0",
+        "tmp%7#0"
+      ]
+    },
+    "321": {
+      "op": "bytec_0 // \"device_emissions\""
+    },
+    "322": {
+      "op": "swap",
+      "stack_out": [
+        "receiver#0",
+        "\"device_emissions\"",
+        "tmp%7#0"
+      ]
+    },
+    "323": {
+      "op": "app_local_put",
+      "stack_out": []
+    },
+    "324": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "325": {
+      "op": "return",
+      "stack_out": []
+    },
+    "326": {
+      "subroutine": "smart_contracts.carbonfootprint.contract.CarbonFootprintContract.get_total_emissions[routing]",
+      "params": {},
+      "block": "get_total_emissions",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "327": {
+      "op": "bytec_2 // \"total_emissions\"",
+      "defined_out": [
+        "\"total_emissions\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"total_emissions\""
+      ]
+    },
+    "328": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "329": {
+      "error": "check self.total_emissions exists",
+      "op": "assert // check self.total_emissions exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "330": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "331": {
+      "op": "bytec_1 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "332": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "333": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "334": {
+      "op": "log",
+      "stack_out": []
+    },
+    "335": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "336": {
+      "op": "return",
+      "stack_out": []
+    },
+    "337": {
+      "subroutine": "smart_contracts.carbonfootprint.contract.CarbonFootprintContract.get_device_emissions[routing]",
+      "params": {},
+      "block": "get_device_emissions",
+      "stack_in": [],
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "339": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "0"
+      ]
+    },
+    "340": {
+      "op": "bytec_0 // \"device_emissions\"",
+      "defined_out": [
+        "\"device_emissions\"",
+        "0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "0",
+        "\"device_emissions\""
+      ]
+    },
+    "341": {
+      "op": "app_local_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "342": {
+      "error": "check self.device_emissions exists for account",
+      "op": "assert // check self.device_emissions exists for account",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "343": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "344": {
+      "op": "bytec_1 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "345": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "346": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "347": {
+      "op": "log",
+      "stack_out": []
+    },
+    "348": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "349": {
+      "op": "return",
+      "stack_out": []
+    },
+    "350": {
+      "subroutine": "smart_contracts.carbonfootprint.contract.CarbonFootprintContract.get_emissions_for_account[routing]",
+      "params": {},
+      "block": "get_emissions_for_account",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "account#0"
+      ],
+      "stack_out": [
+        "account#0"
+      ]
+    },
+    "353": {
+      "op": "dup",
+      "defined_out": [
+        "account#0",
+        "account#0 (copy)"
+      ],
+      "stack_out": [
+        "account#0",
+        "account#0 (copy)"
+      ]
+    },
+    "354": {
+      "op": "len",
+      "defined_out": [
+        "account#0",
+        "len%0#0"
+      ],
+      "stack_out": [
+        "account#0",
+        "len%0#0"
+      ]
+    },
+    "355": {
+      "op": "pushint 32 // 32",
+      "defined_out": [
+        "32",
+        "account#0",
+        "len%0#0"
+      ],
+      "stack_out": [
+        "account#0",
+        "len%0#0",
+        "32"
+      ]
+    },
+    "357": {
+      "op": "==",
+      "defined_out": [
+        "account#0",
+        "eq%0#0"
+      ],
+      "stack_out": [
+        "account#0",
+        "eq%0#0"
+      ]
+    },
+    "358": {
+      "error": "invalid number of bytes for arc4.static_array<arc4.uint8, 32>",
+      "op": "assert // invalid number of bytes for arc4.static_array<arc4.uint8, 32>",
+      "stack_out": [
+        "account#0"
+      ]
+    },
+    "359": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "account#0"
+      ],
+      "stack_out": [
+        "account#0",
+        "0"
+      ]
+    },
+    "360": {
+      "op": "bytec_0 // \"device_emissions\"",
+      "defined_out": [
+        "\"device_emissions\"",
+        "0",
+        "account#0"
+      ],
+      "stack_out": [
+        "account#0",
+        "0",
+        "\"device_emissions\""
+      ]
+    },
+    "361": {
+      "op": "app_local_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "362": {
+      "error": "check self.device_emissions exists for account",
+      "op": "assert // check self.device_emissions exists for account",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "363": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "364": {
+      "op": "bytec_1 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "365": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "366": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "367": {
+      "op": "log",
+      "stack_out": []
+    },
+    "368": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "369": {
+      "op": "return",
+      "stack_out": []
+    },
+    "370": {
+      "subroutine": "smart_contracts.carbonfootprint.contract.CarbonFootprintContract.get_device_count[routing]",
+      "params": {},
+      "block": "get_device_count",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "371": {
+      "op": "bytec_3 // \"device_count\"",
+      "defined_out": [
+        "\"device_count\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"device_count\""
+      ]
+    },
+    "372": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "373": {
+      "error": "check self.device_count exists",
+      "op": "assert // check self.device_count exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "374": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "375": {
+      "op": "bytec_1 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "376": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "377": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "378": {
+      "op": "log",
+      "stack_out": []
+    },
+    "379": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "380": {
+      "op": "return",
+      "stack_out": []
+    },
+    "381": {
+      "subroutine": "smart_contracts.carbonfootprint.contract.CarbonFootprintContract.get_sender_address[routing]",
+      "params": {},
+      "block": "get_sender_address",
+      "stack_in": [],
+      "op": "bytec_1 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75"
+      ],
+      "stack_out": [
+        "0x151f7c75"
+      ]
+    },
+    "382": {
+      "op": "txn Sender",
+      "defined_out": [
+        "0x151f7c75",
+        "awst_tmp%0#0"
+      ],
+      "stack_out": [
+        "0x151f7c75",
+        "awst_tmp%0#0"
+      ]
+    },
+    "384": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "385": {
+      "op": "log",
+      "stack_out": []
+    },
+    "386": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "387": {
+      "op": "return",
+      "stack_out": []
+    }
+  }
+}

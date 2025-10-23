@@ -1,0 +1,14 @@
+name: Pull Request validation
+
+on: [pull_request]
+
+
+jobs:
+  carbonfootprint-contracts-ci:
+    name: Run carbonfootprint-contracts validation
+    uses: ./.github/workflows/carbonfootprint-contracts-ci.yaml
+
+  carbonfootprint-frontend-ci:
+    name: Run carbonfootprint-frontend validation
+    uses: ./.github/workflows/carbonfootprint-frontend-ci.yaml
+

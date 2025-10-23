@@ -1,0 +1,38 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'docs/**'
+      - '**.md'
+      - '.vscode/**'
+      - '.idea/**'
+
+permissions:
+  contents: read
+  packages: read
+
+jobs:
+  carbonfootprint-contracts-validate:
+    name: Run carbonfootprint-contracts release
+    secrets: inherit
+    uses: ./.github/workflows/carbonfootprint-contracts-ci.yaml
+
+  carbonfootprint-contracts-release:
+    name: Run carbonfootprint-contracts release
+    secrets: inherit
+    uses: ./.github/workflows/carbonfootprint-contracts-cd.yaml
+    needs: carbonfootprint-contracts-validate
+
+  carbonfootprint-frontend-validate:
+    name: Run carbonfootprint-frontend release
+    secrets: inherit
+    uses: ./.github/workflows/carbonfootprint-frontend-ci.yaml
+
+  carbonfootprint-frontend-release:
+    name: Run carbonfootprint-frontend release
+    secrets: inherit
+    uses: ./.github/workflows/carbonfootprint-frontend-cd.yaml
+    needs: carbonfootprint-frontend-validate
