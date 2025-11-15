@@ -152,3 +152,4 @@ This project makes use of Algorand Python to build Algorand smart contracts. The
 - [pip-audit](https://pypi.org/project/pip-audit/): Tool for scanning Python environments for packages with known vulnerabilities.
 It has also been configured to have a productive dev experience out of the box in [VS Code](https://code.visualstudio.com/), see the [.vscode](./.vscode) folder.
 
+You can view the testnet deployment here: https://lora.algokit.io/testnet/application/748331995
